@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices de HTML</title>
+</head>
+<body bgcolor="#00ffff">
+    <h1 align="center">Corrigé des exercices de HTML
+        <hr width="80%" cellspacing="2">
+    </h1><br>
+    <h3 align="left"><font color="blue">Exercice 2</font></h3>
+    <table align="center" border="1" width="80%" cellpadding="6" cellspacing="6">
+            <tr>
+                <td text align="center" colspan="3" width="33%" height="30px">Cette cellule occupe toute la largeur du tableau.</td>
+            </tr>
+        <tr>
+            <td  height="30px" width="33%" text align="left">Alignement à gauche</td>
+            <td  height="30px" width="33%" text align="center">Texte centré</td>
+            <td  height="30px" width="33%" text align="right">Alignement à droite </td>
+        </tr>
+        <tr>
+            <td  height="30px" width="33%" rowspan="2">Cette cellule occupe deux lignes</td>
+            <td   height="30px"width="33%">
+                <font color="red">
+                     Ecrit en rouge
+                </font>
+            </td>
+            <td  height="30px" width="33%"></td>
+        </tr>
+        <tr>
+            <td height="30px"  width="33%">Je ne definis que</td>
+            <td  height="30px" width="33%">Deux cellules sur cette ligne</td>
+        </tr>
+        <tr>
+            <td  height="30px" width="33%" colspan="2">Fusion de deux cellules</td>
+            <td  height="30px" width="33%" bgcolor="orange"></td>
+        </tr>
+    </table><br><br>
+    <!--fin de l'exercice 2 ; Debut exercice 3-->
+    <h3 align="left"><font color="blue">Exercice 3</font></h3>
+    <ul>
+        <li>Titre 1</li>
+        <li>Titre 2
+            <ul>
+                <li type="circle">Section 1</li>
+                <li type="circle">Section 2
+                    <ul>
+                        <li type="square">Sous-section 1</li>
+                        <li type="square">Sous-section 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Titre 3
+            <ul>
+                <li type="circle">Section 1</li>
+                <li type="circle">Section 2</li>
+            </ul>
+        </li>
+    </ul><br><br>
+    <!--fin de l'exercice3 et debut de l'exercice 4-->
+    <h3><font color="blue">Exercice 4</font></h3>
+      <p><font face="comic sans MS">J'utilise la police comic sans MS
+        </font>
+      </p>
+       <p>
+        <font face="Arial">
+        J'utilise la police Arial
+       </font>
+       </p>
+      <p>
+       <font face="verdana">
+        J'utilise la police verdana
+       </font>
+      </p><br><br>
+      <!--Debut exercice 5-->
+    <h3><font color="blue">Exercice 5</font></h3>  
+    <form method="post">
+       <fieldset>
+                    <legend>Vos Coordonnees</legend>
+                    <label for="name">Nom :</label> 
+                    <input type="text" id="nom" name="nom" placeholder="votre nom"/>
+                    <br/><br/>
+                    <label for="Prenom">Prenom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="votre prenom"/>
+                    <br><br>
+                    <label for="date">Date de Naissance :</label>
+                    <input type="date" id="date" name="date"/>
+                    <br><br>
+                    <label for="email">Mail :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre Mail"/>
+                    <br><br>
+                    <label for="site">Votre Site :</label>
+                    <input type="url" id="site" name="site"/>
+                    <br><br>
+                    <label for="code postal">Code :</label>
+                    <input type="code" id="code postal" name="code postal"/>
+                    <br><br>
+                    <label for="sexe">Genre :</label>
+                    <input type="radio" id="sexe" name="sexe">
+                    <label for="sexe">Homme</label>
+                     <input type="radio" id="sexe" name="sexe">
+                    <label for="sexe">Femme</label><br><br>
+                    <label for="pays">Pays :</label>
+                    <select name="pays" id="pays">
+                        <option value="pays">Votre pays</option>
+                        <option value="cameroun">Cameroun</option>
+                        <option value="congo">Congo</option>
+                        <option value="bresil">Bresil</option>
+                        <option value="france">France</option>
+                        <option value="canada">Canada</option>
+                        <option value="gabon">Gabon</option>
+                    </select>
+        </fieldset><br>
+        <fieldset >
+            <legend>Vos gouts</legend>
+      <input type="checkbox" name="food" id="food"/>
+      <label for="food">Tarte aux fraises à la crème d'amandes</label><br>
+      <input type="checkbox" name="food" id="food"/>
+      <label for="food">Tarte aux prunes</label><br>
+      <input type="checkbox" name="food" id="food"/>
+      <label for="food">Tarte rustique aux mirabelles de Lorraine,noisettes et miel</label><br>
+      <textarea id="com" name="commentaire" placeholder="Décrivez vos gouts en detail"></textarea>
+        </fieldset><br>
+        <fieldset>
+                    <legend>Envoyez nous votre photo</legend>
+                    <button type="image" name="envoyer">choisir un fichier</button>Aucun fichier choisi<br><br>
+                    <button type="reset" name="effacer">Effacer</button>
+                    <button type="submit" name="soumettre">Envoyer</button>
+        </fieldset>
+    </form><br>
+    <!--ceci est le debut de l'exercice 6-->
+    <h3><font color="blue">Exercice 6</font></h3>
+       <form method="post">
+        <fieldset>
+            <legend>Coordonnees</legend>
+                <label for="civilite">Civilite :</label>
+                <input type="radio" name="civilite" value="mademoiselle" id="civilite">
+                <label for="civilite">Mademoiselle</label>
+                <input type="radio" name="civilite" value="madame" id="civilite">
+                <label for="civilite">Madame</label>
+                <input type="radio" name="civilite" value="monsieur" id="civilite" checked="checked">
+                <label for="civilite"> Monsieur</label><br><br>
+                <label for="nom">Nom / Prenom :</label>
+                <input type="text" id="nom" ><br><br>
+                <label for="adresse">Adresse :</label>
+                <textarea id="adress" name="adresse" placeholder="Rue No Boite postale"></textarea><br><br>
+                <label for="Codepostal">code postal/<br> Localite /<br>
+                    Gouvernorat :</label>
+                <input type="text" id="codepostale">
+                <input type="text" value="Jendouba"> 
+                <select>
+                    <option value="">Jendouba</option>
+                </select><br><br>
+                <label>Pays : </label><Select> 
+                    <option>Tunisie</option>
+                </Select><br><br>
+            <label for="plateform">plateforme(s) :</label>
+            <input  type="checkbox" name="operatingsystem" id="windows" checked="checked">
+            <label for="operatingsystem">Windows</label>
+            <input type="checkbox" name="operatingsystem" id="macintosh" checked="checked">
+            <label for="operatingsystem">Macintosh</label>
+            <input type="checkbox" name="operatingsystem" id="unix">
+            <label for="operatingsystem">Unix</label><br><br>
+            <label for="application">Applications : </label>
+            <select multiple name="application" id="application">
+                <option value="bureautique">Bureautique</option>
+                <option value="dao">DAO</option>
+                <option value="statistique"> Statistiques</option>
+                <option value="sgbd">SGBD</option>
+                <option value="internet">Internet</option>
+            </select><br><br>
+            <button type="submit" name="soumettre">Soumettre le formulaire</button>
+            <button type="reset" name="effacer">Effacer</button><br>
+        </fieldset>
+       </form>
+</body>
+</html>
