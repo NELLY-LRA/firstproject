@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body bgcolor="pink">
+    <h3 align="left"><font color="blue">Exercice 2</font></h3>
+     <table border="1" align="center" width="80%" cellpadding="6" cellspacing="6">
+             <tr>
+                 <td text align="center" colspan="3" width="33%" height="30px">Cette cellule occupe toute la largeur du tableau.</td>
+             </tr>
+         <tr>
+             <td  height="30px" width="33%" text align="left">Alignement à gauche</td>
+             <td  height="30px" width="33%" text align="center">Texte centré</td>
+             <td  height="30px" width="33%" text align="right">Alignement à droite </td>
+         </tr>
+         <tr>
+             <td  height="30px" width="33%" rowspan="2">Cette cellule occupe deux lignes</td>
+             <td   height="30px"width="33%">
+                 <font color="red">
+                      Ecrit en rouge
+                 </font>
+             </td>
+             <td  height="30px" width="33%"></td>
+         </tr>
+         <tr>
+             <td height="30px"  width="33%">Je ne definis que</td>
+             <td  height="30px" width="33%">Deux cellules sur cette ligne</td>
+         </tr>
+         <tr>
+             <td  height="30px" width="33%" colspan="2">Fusion de deux cellules</td>
+             <td class="td2" height="30px" width="33%"></td>
+         </tr>
+     </table><br><br>
+     <!--fin de l'exercice3 et debut de l'exercice 4-->
+    <h3><font color="blue">Exercice 4</font></h3>
+    <p2>J'utilise la police comic sans MS
+    </p>
+     <p1>
+      J'utilise la police Arial
+     </p>
+    <p3>
+      J'utilise la police verdana
+    </p><br><br>
+    <!--Debut exercice 5-->
+    <h3><font color="blue">Exercice 5</font></h3>  
+    <form method="post">
+       <fieldset>
+                    <legend>Vos Coordonnees</legend>
+                    <label for="name">Nom :</label> 
+                    <input type="text" id="nom" name="nom" placeholder="votre nom"/>
+                    <br/><br/>
+                    <label for="Prenom">Prenom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="votre prenom"/>
+                    <br><br>
+                    <label for="date">Date de Naissance :</label>
+                    <input type="date" id="date" name="date"/>
+                    <br><br>
+                    <label for="email">Mail :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre Mail"/>
+                    <br><br>
+                    <label for="site">Votre Site :</label>
+                    <input type="url" id="site" name="site"/>
+                    <br><br>
+                    <label for="code postal">Code :</label>
+                    <input type="code" id="code postal" name="code postal"/>
+                    <br><br>
+                    <label for="sexe">Genre :</label>
+                    <input type="radio" id="sexe" name="sexe">
+                    <label for="sexe">Homme</label>
+                     <input type="radio" id="sexe" name="sexe">
+                    <label for="sexe">Femme</label><br><br>
+                    <label for="pays">Pays :</label>
+                    <select name="pays" id="pays">
+                        <option value="pays">Votre pays</option>
+                        <option value="cameroun">Cameroun</option>
+                        <option value="congo">Congo</option>
+                        <option value="bresil">Bresil</option>
+                        <option value="france">France</option>
+                        <option value="canada">Canada</option>
+                        <option value="gabon">Gabon</option>
+                    </select>
+        </fieldset><br>
+        <fieldset >
+            <legend>Vos gouts</legend>
+      <input type="checkbox" name="food" id="food"/>
+      <label for="food">Tarte aux fraises à la crème d'amandes</label><br>
+      <input type="checkbox" name="food" id="food"/>
+      <label for="food">Tarte aux prunes</label><br>
+      <input type="checkbox" name="food" id="food"/>
+      <label for="food">Tarte rustique aux mirabelles de Lorraine,noisettes et miel</label><br>
+      <textarea id="com" name="commentaire" placeholder="Décrivez vos gouts en detail"></textarea>
+        </fieldset><br>
+        <fieldset>
+                    <legend>Envoyez nous votre photo</legend>
+                    <button type="image" name="envoyer">choisir un fichier</button>Aucun fichier choisi<br><br>
+                    <button type="reset" name="effacer">Effacer</button>
+                    <button type="submit" name="soumettre">Envoyer</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+-td{
+    border:1px solid black;
+}
+-table{
+    border-collapse:collapse;
+    border:1px blue
+}
+td2{
+    background-color: chocolate;
+}
+p1{
+    font-family: Arial;
+}
+p2{
+    font-family: serif;
+}
+p3{
+    font-family: Verdana;
+}
+fieldset{
+    border-radius: 10px;
+}
